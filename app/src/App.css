@@ -54,3 +54,55 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: #002270dc;
 }
+
+.card {
+  width: 200px;
+  height: 250px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.card-id {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.player-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.player-name,
+.player-position,
+.player-team {
+  margin-bottom: 5px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.card-container > div {
+  flex: 1 1 calc(25% - 16px);
+}
